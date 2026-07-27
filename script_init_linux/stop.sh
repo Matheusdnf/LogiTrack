@@ -7,5 +7,5 @@ echo.
 docker-compose stop
 
 echo.
-echo 💤 Todos os servicos foram parados com sucesso.
+echo Todos os servicos foram parados com sucesso.
 echo.
