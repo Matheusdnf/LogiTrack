@@ -1,16 +1,18 @@
-
 # 1. Banco de Dados (PostgreSQL)
+
 POSTGRES_DB=logitrack_pro
 POSTGRES_USER=nome_de_usuario
 POSTGRES_PASSWORD=senha_de_usuario
-POSTGRES_PORT=5432
 
 # 2. Backend API (Spring Boot)
+
 SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/logitrack_pro
 SPRING_JPA_HIBERNATE_DDL_AUTO=validate
 
 # 3. Segurança / JWT
+
 JWT_SECRET=senha_secreta_para_jwt_precisa_ter_no_minimo_32_caracteres
 
 # 4. Frontend Web (Next.js)
+
 NEXT_PUBLIC_API_URL=http://localhost:8080/api
