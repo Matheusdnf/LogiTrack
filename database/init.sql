@@ -12,7 +12,7 @@ CREATE TABLE veiculos (
     id BIGSERIAL PRIMARY KEY,
     placa VARCHAR(10) UNIQUE NOT NULL,
     modelo VARCHAR(50) NOT NULL,
-    tipo VARCHAR(50),
+    tipo VARCHAR(20) CHECK (tipo IN ('LEVE', 'PESADO')),
     ano INTEGER
 );
 
@@ -37,6 +37,11 @@ CREATE TABLE manutencoes (
     custo_estimado DECIMAL(10,2),
     status VARCHAR(20) DEFAULT 'PENDENTE' -- PENDENTE, EM_REALIZACAO, CONCLUIDA
 );
+
+-- Inserindo Usuários (Autenticação e Acesso RBAC)
+INSERT INTO usuarios (username, email, password_hash, role) VALUES 
+('Administrador', 'admin@logitrack.com', '$2b$10$RjhmgXqO9iNH9hm9wX0fcOFeQafRbaEyhzKGTxyipVyNzV9nqYjmq', 'ADMIN'),
+('Gestor de Frota', 'gestor@logitrack.com', '$2b$10$VVl3zj0BJ4ieFaUoTChOA.SCH95aOA.QvBD3qfGWhfQIvPaqNg8A2', 'GESTOR');
 
 -- Inserindo Veículos
 INSERT INTO veiculos (placa, modelo, tipo, ano) VALUES 
