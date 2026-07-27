@@ -1,0 +1,13 @@
+package logitrack.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CategoryVolumeDTO {
+    private String categoria;
+    private Long totalViagens;
+}
