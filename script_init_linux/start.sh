@@ -5,7 +5,7 @@ echo "Iniciando ambiente LogiTrack Pro"
 
 # Inicia a infraestrutura forçando o build para capturar qualquer mudança de dependência
 echo "Iniciando Containers"
-docker-compose up --build -d
+docker compose up --build -d
 
 echo "------------------------------------------------------"
 echo "Frontend (Next.js) rodando em: http://localhost:3000"
