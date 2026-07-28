@@ -156,7 +156,7 @@ INSERT INTO usuarios (username, email, password_hash, role) VALUES
    Faça uma cópia do exemplo e coloque as variáveis para inicialização, e depois o renomeie para .env
 
    ```bash
-   cp .example_env .env
+   cp example_env .env
    ```
 
    Preencha o mesmo conforme está no exemplo
